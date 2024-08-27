@@ -29,39 +29,41 @@
         
         <div class="bg-gray-100 py-10 flex flex-col md:flex md:flex-col lg:flex-row lg:items-center lg:gap-24">
             <!-- main container div -->
-            <div class="sm:flex sm:flex-col-reverse md:px-10">
+            <div class="flex flex-col md:flex-col md:px-10">
                 <!--  cart container -->
                   <div>
-                    <!-- kitchen carts -->
+                    <!-- kitchen container -->
                     <h1 class="text-3xl font-bold py-6">Kitchenwere</h1>
+                  
                     <div class="flex flex-col md:flex md:flex-row gap-4">
-                    
+                      <!-- kitchencart carts -->
                     <!-- 1st cart -->
-                    <div id="kitchenCart1" class="card bg-base-100 md:w-96 shadow-xl">
-                        <figure class="px-10 pt-10">
-                          <img
-                            src="images/prod1.png"
-                            alt="Shoes"
-                            class="rounded-xl" />
-                        </figure>
-                        <div class="card-body items-center text-center">
-                          <h2 class="card-title">K. accessories</h2>
+                    <div id="kitchenCart2" class="card bg-base-100 md:w-96 shadow-xl">
+                      <figure class="px-10 pt-10">
+                        <img
+                          src="images/prod1.png"
+                          alt="Shoes"
+                          class="rounded-xl" />
+                      </figure>
+                      <div class="card-body items-center text-center">
+                        <h2 class="card-title">Spoon & Knife</h2>
 
-                          <div class="rating rating-md">
-                            <input type="radio" name="rating-7" class="mask mask-star-2 bg-orange-400" />
-                            <input
-                              type="radio"
-                              name="rating-7"
-                              class="mask mask-star-2 bg-orange-400"
-                              checked="checked" />
-                            <input type="radio" name="rating-7" class="mask mask-star-2 bg-orange-400" />
-                            <input type="radio" name="rating-7" class="mask mask-star-2 bg-orange-400" />
-                            <input type="radio" name="rating-7" class="mask mask-star-2 bg-orange-400" />
-                          </div>
-
-                          <p><span>39.00</span>tk</p>
+                        <div class="rating rating-md">
+                          <input type="radio" name="rating-7" class="mask mask-star-2 bg-orange-400" />
+                          <input
+                            type="radio"
+                            name="rating-7"
+                            class="mask mask-star-2 bg-orange-400"
+                            checked="checked" />
+                          <input type="radio" name="rating-7" class="mask mask-star-2 bg-orange-400" />
+                          <input type="radio" name="rating-7" class="mask mask-star-2 bg-orange-400" />
+                          <input type="radio" name="rating-7" class="mask mask-star-2 bg-orange-400" />
                         </div>
+
+                        <p><span id="kitchenCartPrice2">39.00</span> tk</p>
+                        <button onclick="getPricevalue(this)" class="text-center text-white px-5 py-3 bg-pink-500 hover:bg-pink-400 font-bold rounded-md">Bye Now</button>
                       </div>
+                    </div>
 
                       <!-- 2nd cart -->
                       <div id="kitchenCart2" class="card bg-base-100 md:w-96 shadow-xl">
@@ -72,7 +74,7 @@
                             class="rounded-xl" />
                         </figure>
                         <div class="card-body items-center text-center">
-                          <h2 class="card-title">K. accessories</h2>
+                          <h2 class="card-title">Chopping Board</h2>
 
                           <div class="rating rating-md">
                             <input type="radio" name="rating-7" class="mask mask-star-2 bg-orange-400" />
@@ -86,7 +88,8 @@
                             <input type="radio" name="rating-7" class="mask mask-star-2 bg-orange-400" />
                           </div>
 
-                          <p><span>39.00</span>tk</p>
+                          <p><span id="kitchenCartPrice2">50.00</span> tk</p>
+                          <button onclick="getPricevalue(this)" class="text-center text-white px-5 py-3 bg-pink-500 hover:bg-pink-400 font-bold rounded-md">Bye Now</button>
                         </div>
                       </div>
 
@@ -113,7 +116,8 @@
                             <input type="radio" name="rating-7" class="mask mask-star-2 bg-orange-400" />
                           </div>
 
-                          <p><span>39.00</span>tk</p>
+                          <p><span id="kitchenCartPrice3">150.00</span> tk</p>
+                          <button onclick="getPricevalue(this)" class="text-center text-white px-5 py-3 bg-pink-500 hover:bg-pink-400 font-bold rounded-md">Bye Now</button>
                         </div>
                       </div>
 
@@ -136,7 +140,7 @@
                               class="rounded-xl" />
                           </figure>
                           <div class="card-body items-center text-center">
-                            <h2 class="card-title">Sport Were</h2>
+                            <h2 class="card-title">Sport Cap</h2>
   
                             <div class="rating rating-md">
                               <input type="radio" name="rating-7" class="mask mask-star-2 bg-orange-400" />
@@ -150,7 +154,8 @@
                               <input type="radio" name="rating-7" class="mask mask-star-2 bg-orange-400" />
                             </div>
   
-                            <p><span>39.00</span>tk</p>
+                            <p><span id="SportWereCartPrice1">39.00</span> tk</p>
+                            <button onclick="getPricevalue(this)" class="text-center text-white px-5 py-3 bg-pink-500 hover:bg-pink-400 font-bold rounded-md">Bye Now</button>
                           </div>
                         </div>
   
@@ -163,7 +168,7 @@
                               class="rounded-xl" />
                           </figure>
                           <div class="card-body items-center text-center">
-                            <h2 class="card-title">Sport Were</h2>
+                            <h2 class="card-title">Sport Jarci</h2>
   
                             <div class="rating rating-md">
                               <input type="radio" name="rating-7" class="mask mask-star-2 bg-orange-400" />
@@ -177,7 +182,8 @@
                               <input type="radio" name="rating-7" class="mask mask-star-2 bg-orange-400" />
                             </div>
   
-                            <p><span>39.00</span>tk</p>
+                            <p><span id="SportWereCartPrice2">50.00</span> tk</p>
+                            <button onclick="getPricevalue(this)" class="text-center text-white px-5 py-3 bg-pink-500 hover:bg-pink-400 font-bold rounded-md">Bye Now</button>
                           </div>
                         </div>
   
@@ -190,7 +196,7 @@
                               class="rounded-xl" />
                           </figure>
                           <div class="card-body items-center text-center">
-                            <h2 class="card-title">Sport Were</h2>
+                            <h2 class="card-title">sports shoes</h2>
   
                             <div class="rating rating-md">
                               <input type="radio" name="rating-7" class="mask mask-star-2 bg-orange-400" />
@@ -204,7 +210,8 @@
                               <input type="radio" name="rating-7" class="mask mask-star-2 bg-orange-400" />
                             </div>
   
-                            <p><span>39.00</span>tk</p>
+                            <p><span id="SportWereCartPrice3">90.00</span> tk</p>
+                            <button onclick="getPricevalue(this)" class="text-center text-white px-5 py-3 bg-pink-500 hover:bg-pink-400 font-bold rounded-md">Bye Now</button>
                           </div>
                         </div>
   
@@ -233,22 +240,22 @@
                   <!-- coupon contaner -->
                    <h1 class="text-2xl font-bold pb-4">Have Coupon?</h1>
                    <div>
-                   <input class="drop-shadow-xl border-2 w-1/3 py-1 rounded-lg ml-0" type="text" name="" id="">
-                   <button class="bg-pink-500 hover:bg-pink-400 text-white px-5 py-1 rounded-lg drop-shadow-xl">Apply</button>
+                   <input itemid="disc-input" class="drop-shadow-xl border-2 w-1/3 py-1 rounded-lg ml-0" type="text" name="" id="">
+                   <button onclick="getDiscount(this)" id="disc-btn" class="bg-pink-500 hover:bg-pink-400 text-white px-5 py-1 rounded-lg drop-shadow-xl">Apply</button>
                   </div>
                  </div>
 
                  <div class="bg-white rounded-lg drop-shadow-xl">
                   <!-- parches calclutor -->
-                   <div id="addToCart" class="mt-7">
+                   <div id="selectedCart" class="mt-7 mb-3 text-2xl font-semibold p-12">
                     <!-- add to cart -->
 
                    </div>
                    <hr>
                    <div class="text-2xl font-semibold p-12">
-                    <h1>Total Price: <span>00</span> tk</h1>
-                    <h1 class="my-3">Discount: <span>00</span> tk</h1>
-                    <h1>Total: <span>00</span> tk</h1>
+                    <h1>Total Price: <span id="totalPrice">00</span> tk</h1>
+                    <h1 class="my-3">Discount: <span id="discountAmount">00</span> tk</h1>
+                    <h1>Total: <span id="totalAmountFild">00</span> tk</h1>
                    </div>
                    <hr>
                    <div class="text-center py-10">
@@ -262,6 +269,8 @@
         
         
           </div>
+          <!-- js file link -->
+           <script src="js/utility.js"></script>
 
     </main>
 </body>
