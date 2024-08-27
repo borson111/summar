@@ -13,27 +13,36 @@ function getPricevalue(target){
    const totalPrice = document.getElementById("totalPrice");
    totalPrice.innerText = total;
 
-   
+   const totalAmountFild = document.getElementById("totalAmountFild")
+   totalAmountFild.innerText = total
  
 }
 
 
 function getDiscount(target){
+    
     if(total >= 200){
         const discInput = target.parentNode.childNodes[1].value;
+        const totalAmountFild = document.getElementById("totalAmountFild");
        if(discInput === "OFF20"){
-        const discTotal = (total * (100-20)) / 100;
-        const discountAmount = document.getElementById("discountAmountFild");
+        const discTotal = (total * 20) / 100;
+        
+        const discountAmount = document.getElementById("discountAmount");
+        
         discountAmount.innerText = discTotal;
 
-        const totalAmountFild = document.getElementById("totalAmount");
+        
 
-        const totalAmounr = total - discTotal;
-
-        totalAmountFild.innerText = totalAmounr;
-       }else{
-        alert
+            
+        const totalAmount = total - discTotal;
+        totalAmountFild.innerText = totalAmount;
        }
-    }else{}
+       else{
+        alert("Give Valid Coupon")
+       
+       }
+    }else{
+        totalAmountFild.innerText = total;
+    }
   
 }
